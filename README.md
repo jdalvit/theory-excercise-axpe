@@ -5,7 +5,6 @@
 **Problema:** La clase RegisteredUser no deberia encargarse del calculo getTotal.
 
 **Solucion:** Implementar una clase TotalPriceCalculator con un metodo que reciba un RegisteredUser y se encargue de la logica de getTotal.
-MultimediaContent -> los prices
 
 ### Open-Closed
 **Problema:** El metodo getTotal se encuentra acoplado a la implementacion de las clases Service y MultimediaContent.
