@@ -65,22 +65,24 @@ export class MultimediaContent {
   // fields title/duration/adult/...
 }
 
+interface PremiumMarkup {
+  addPremiumMarkup(base: number): number;
+}
+
 export class MultimediaContentPrice {
   private price: number;
-  private premiumMarkup: PremiumMarkup;
+  private premiumMarkup?: PremiumMarkup;
 
-  constructor(price: number, premium: PremiumMarkup) {
+  constructor(price: number, premium?: PremiumMarkup) {
     this.price = price;
     this.premiumMarkup = premium;
   }
 
   getFinalPrice(): number {
-    return this.premiumMarkup.addPremiumMarkup(this.price);
+    return this.premiumMarkup
+      ? this.premiumMarkup.addPremiumMarkup(this.price)
+      : this.price;
   }
-}
-
-interface PremiumMarkup {
-  addPremiumMarkup(base: number): number;
 }
 
 /////////////////////// another file
