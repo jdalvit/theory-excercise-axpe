@@ -24,7 +24,7 @@ El codigo actual no viola el principio de Interface Segregation ya que no hay in
 **Solucion:** Crear la interfaz PayableService para desacoplar RegisteredUser y Service y tambien en el resto de modificaciones realizadas garantizar que las clases se comunican entre si a traves de interfaces.
 
 ## Esquema UML:
-Se encuentra disponible en el siguiente archivo: [UML](https://github.com/jdalvit/theory-excercise-axpe/blob/main/UML.jpg)
+Se encuentra disponible en el siguiente archivo: [UML](https://github.com/jdalvit/theory-excercise-axpe/blob/main/Diagrama%20UML.jpg)
 
 ## Pseudocodigo:
 Se encuentra disponible en el siguiente archivo: [Pseudocodigo](https://github.com/jdalvit/theory-excercise-axpe/blob/main/Pseudocodigo.ts)
